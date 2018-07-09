@@ -6,7 +6,7 @@ header("Content-type:text/html;charset=utf-8");
  * Date: 2018/7/6
  * Time: 18:30
  */
-include_once 'array_sort.php';
+include_once 'easyArraySort.php';
 
 $arr = array(
     '3308'=>array(

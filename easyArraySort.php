@@ -40,7 +40,7 @@ class my_array_sort{
      * Date: 2018/07/06
      * Explain:二维数组个别字段字符编码转换
      */
-   static public function array_chane_code($array = array(),$key_name_value,$old_type_value,$new_type_value){
+   static public function array_change_code($array = array(),$key_name_value,$old_type_value,$new_type_value){
         array_walk($array, function(&$value) use ($key_name_value,$old_type_value,$new_type_value){
             $value[$key_name_value] = iconv($old_type_value, $new_type_value, $value[$key_name_value]);
         });
@@ -84,11 +84,11 @@ class my_array_sort{
      */
     public function do_array(){
         //对utf8数据转为gbk
-        $new_arr = self::array_chane_code($this->array,$this->key_name,$this->old_type,$this->new_type);
+        $new_arr = self::array_change_code($this->array,$this->key_name,$this->old_type,$this->new_type);
         //对转过后的gbk数据，字段排序
         $new_arr = self::my_array_sort($new_arr,$this->key_name,$this->sort_order,$this->sort_type);
         //排序完成，对gbk数据转为utf8
-        $result_arr = self::array_chane_code($new_arr,$this->key_name,$this->new_type,$this->old_type);
+        $result_arr = self::array_change_code($new_arr,$this->key_name,$this->new_type,$this->old_type);
 
         return $result_arr;
     }
