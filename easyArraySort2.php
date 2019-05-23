@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: wangjiapeng
+ * User: runBaby
  * Date: 2018/7/6
  * Time: 18:12
  */
@@ -55,7 +55,7 @@ class my_array_sort{
      * @param int $sort_type    排序类型 array_multisort()
      * @return array|bool
      * Name: my_array_sort
-     * User: wangjiapeng
+     * User: runBaby
      * Date:2018/07/06
      * Explain:二维数组排序
      */
@@ -67,7 +67,7 @@ class my_array_sort{
     /**
      * @return mixed
      * Name: do_array
-     * User: wangjiapeng
+     * User: runBaby
      * Date: 2018/07/06
      * Explain:执行操作
      */
@@ -85,7 +85,7 @@ class my_array_sort{
     /**
      * @param $key
      * Name: error
-     * User: wangjiapeng
+     * User: runBaby
      * Date: 2018/07/06
      * Explain:错误提示
      */
